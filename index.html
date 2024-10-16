@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas-2 Praktikum Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tugas-2 Praktikum Pemrograman Web</h1>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required /><br />
+
+      <label for="nim">NIM</label>
+      <input type="text" id="nim" name="nim" required /><br />
+
+      <label for="kom">KOM</label>
+      <input type="text" id="kom" name="kom" required /><br />
+
+      <label for="photo">Upload Photo</label>
+      <input
+        type="file"
+        id="photo"
+        name="photo"
+        accept="image/*"
+        required
+      /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" style="display: none">
+      <img id="preview" src="" alt="Uploaded Photo" />
+      <p>Username: <span id="resultUsername"></span></p>
+      <p>NIM: <span id="resultNim"></span></p>
+      <p>KOM: <span id="resultKom"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
